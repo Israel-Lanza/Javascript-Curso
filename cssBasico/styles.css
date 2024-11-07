@@ -1,0 +1,91 @@
+*{/*Afectara a todos los elementos*/
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#container{
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+header{
+    background: red;
+    height: 100px;
+    width: 100%;
+    margin:0px;
+    text-align: center;/*Centrará el texto dentro del contenedor*/
+    line-height: 100px; /*Si le ponemos la misma altura que la caja (contenedor) se pondrá en el medio*/
+    color: white; /*Color de las letras*/
+    border-bottom: 3px dashed; /*Borde por abajo. Pondrá un borde con rayitas cada 3 pixeles*/
+}
+
+nav{
+    background-color: lightblue;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    float: left;/*Los elementos flotaran a la izquierda*/
+    list-style: none;/*Le quita el estilo que tienen, en este caso al ser li le quita los puntos*/
+    margin: 10px; /*Le pone margenes entre los elementos*/
+    line-height: 30px;/*Enlaces del menu centrados*/
+}
+
+
+.clearfix{
+    clear: both; /*Los elementos de abajo del div con esta clase se quedarán en su sitio*/
+}
+
+
+#content{
+    float:left; /*Hacemos que floten a la izquierda los elementos*/
+    width: calc(80% - 80px); /*Le ponemos un ancho al contenedor*/
+    background-color: green; /*Color de fondo*/
+    min-height: 500px; /*Altura mínima*/
+    padding: 40px;
+}
+
+.article{
+    color: white;
+    margin-top: 15px;/*Margin por arriba*/
+    margin-bottom: 15px;/*Margin por abajo*/
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.artcile:first-child{/*Seleccionara el primer hijo de la etiqueta con la clase article*/
+    padding-top:10px;
+    border-top: 1px solid #eee;
+}
+
+.article h2{ /*Seleccionara todos los elementos h2 dentro de las etiquetas que contengan la clase article*/
+    font-size: 25px;/*Propiedad que permite cambiar el tamaño de la fuente*/
+}
+
+aside{
+    float:left; /*Flotan los elementos a la izquierda*/
+    width: calc(20% - 20px);/*calc es una funcion hará un calculo de los parametros que le pongamos dentro del paréntesis*/
+    background:orange;
+    min-height: 500px;
+    padding:10px;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+
+
