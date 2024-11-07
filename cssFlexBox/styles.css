@@ -1,0 +1,55 @@
+body{
+    background-color: beige;
+}
+
+.flex-container{
+    border: 1px solid black;
+    background: #ccc;
+    padding: 20px;
+    display: flex;/*Coloca los elementos uno al lado del otro */
+    /*flex-direction: row;Con esto los contenedores se pondran en vertical y si ponemos row los pondrá en horizontal.
+    Si ponemos column-reverse los pondrá en vertical pero el último lo pondrá arriba del todo y el primero lo pondrá abajo del todo, osea a la inversa.
+    Es flexible y responsive.
+    flex-wrap:nowrap;/*Con no wrap no lo acomodará en varias lineas, se adaptara a 1 linea el ancho.
+    con wrap acomodora para que esten bien organizados y con su tamaño justo dentro del contenedor flex en varias líneas cuanto fuese necesario*/
+    flex-flow: row wrap;/*Será una combinación de las dos (flex-direction y flex-wrap)*/
+    justify-content: center;/*Tiene varias opciones de la forma en la que se disponga el contenido, en este caso quedaran separados manteniendo una distancia relativo al ancho del contenedor padre*/
+    /*align-items: center;/*Centrará los elementos, en este caso se pondrán en el medio. Ir probando*/
+    align-content: center;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.caja{
+    border: 1px solid #726262;
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 200px;
+    /*Aqui iria un height para el tamaño por defecto de los contenedores de dentro del contenedor padre*/
+    line-height: 200px;
+    text-align: center;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.c1{
+    background: lightblue;
+    order:3; /*cambiaremos la distribución de los contenedores dentro del contenedor padre. Aparecen en ese orden. Probar cambiando el numero para ver los cambios*/
+    flex-grow: 1;/*Prioridad del ancho de ese elemento, mas proridad*/
+    flex-basis: 50%;/*Es como el widht, ocupara el ancho que se le asigne. Combinado con el flex-grow y otras propiedades de flex se complementa mucho mejor*/
+}
+
+.c2{
+    background: lightcoral;
+    order:1;
+    flex-grow: 1;
+}
+
+.c3{
+    background:lightgreen;
+    order:2;
+    flex-grow: 1;
+}

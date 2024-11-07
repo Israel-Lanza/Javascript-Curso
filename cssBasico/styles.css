@@ -74,7 +74,7 @@ aside{
     float:left; /*Flotan los elementos a la izquierda*/
     width: calc(20% - 20px);/*calc es una funcion hará un calculo de los parametros que le pongamos dentro del paréntesis*/
     background:orange;
-    min-height: 500px;
+    min-height: 560px;
     padding:10px;
 }
 
