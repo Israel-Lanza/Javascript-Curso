@@ -12,3 +12,4 @@ let fruta = ["manzana", "pera", "fresa"]; //Tipo de dato array o arreglo (colecc
 let heroe = {nombre: "Batman", universo: "DC"}; //Tipo de dato objeto
 
 
+console.log(typeof anio)
